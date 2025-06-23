@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tags Cheat Sheet</title>
+    <!-- Add Inter from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="top-of-page">HTML Tags Cheat Sheet</h1>
+
+    <!-- Table of Contents -->
+    <h2 id="table-of-contents">Table of Contents</h2>
+    <ul>
+      <li><a href="#metadata">Metadata</a></li>
+      <li><a href="#headings">Headings</a></li>
+      <li><a href="#paragraphs">Paragraphs</a></li>
+      <li><a href="#lists">Lists</a></li>
+      <li><a href="#anchors">Anchors (Links)</a></li>
+      <li><a href="#text-emphasis">Text Emphasis</a></li>
+      <li>
+        <a href="#organizing-content">Organizing Content (div, span, br)</a>
+      </li>
+      <li><a href="#breaking-text">Breaking Text (br)</a></li>
+    </ul>
+
+    <!-- Metadata -->
+    <h2 id="metadata">Metadata</h2>
+    <p>
+      The <code>&lt;!DOCTYPE html&gt;</code> declaration is a preamble required
+      at the beginning of every HTML document. It tells the browser which
+      version of HTML the page is written in, ensuring it's rendered in
+      standards mode, which follows the latest web specifications. Without it,
+      browsers might enter "quirks mode," leading to inconsistent rendering and
+      potential layout issues.
+    </p>
+
+    <p>
+      The <code>&lt;html&gt;</code> is the root element that encloses the entire
+      HTML document. It follows the DOCTYPE declaration and contains both the
+      code <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code> sections.
+    </p>
+
+    <p>
+      The <code>&lt;head&gt;</code> element serves as a container for metadata,
+      which is information about the document itself. This information is not
+      displayed on the web page but is crucial for the browser and search
+      engines.
+    </p>
+
+    <p>
+      The <code>&lt;title&gt;</code> element defines the title of the HTML
+      document, which appears in the browser tab and is often used by search
+      engines.
+    </p>
+
+    <p>
+      The <code>&lt;meta&gt;</code> element is used for various metadata, such
+      as character encoding, page description, keywords, author information, and
+      viewport settings.
+    </p>
+
+    <p>
+      The <code>&lt;link&gt;</code> element is primarily used to link external
+      resources, most commonly stylesheets (CSS).
+    </p>
+
+    <p>
+      The <code>&lt;script&gt;</code> element is used to include or reference
+      client-side scripts, typically JavaScript, which can add interactivity to
+      the page.
+    </p>
+
+    <p>
+      The <code>&lt;base&gt;</code> specifies a base URL and/or target for all
+      relative URLs in the document.
+    </p>
+
+    <p>
+      The <code>&lt;style&gt;</code> allows for embedding CSS styles directly
+      within the HTML document.
+    </p>
+
+    <!-- Headings -->
+    <h2 id="headings">Headings</h2>
+    <p>
+      Headings from <code>h1</code> to <code>h6</code> identify blocks and
+      sections. Every page must have one <code>h1</code>. Google's web-crawlers
+      use the <code>h1</code> for search results and SEO.
+    </p>
+
+    <!-- Paragraphs -->
+    <h2 id="paragraphs">Paragraphs</h2>
+    <p>
+      Paragraphs of long-form text containing complete sentences go in the
+      <code>&lt;p&gt;</code> (paragraph) tag. Paragraphs help organize and
+      structure your page's content for both readers and search engines.
+      <code>&lt;p&gt;</code> tags are meant for paragraphs and automatically add
+      spacing between them. <code>&lt;br&gt;</code> should not be used between
+      paragraphs—it's for line breaks within a paragraph, not between
+      paragraphs. Using proper tags is better for accessibility, structure, and
+      SEO.
+    </p>
+
+    <!-- Lists -->
+    <h2 id="lists">Lists</h2>
+    <h3>Types of lists:</h3>
+    <ul>
+      <li>Unordered lists (<code>&lt;ul&gt;</code>)</li>
+      <li>Ordered lists (<code>&lt;ol&gt;</code>)</li>
+    </ul>
+
+    <h3>Unordered Lists</h3>
+    <p>
+      Unordered lists are marked with bullet points and go in
+      <code>&lt;ul&gt;</code> tags. Each list item goes in an
+      <code>&lt;li&gt;</code> tag.
+    </p>
+
+    <h3>Ordered Lists</h3>
+    <p>
+      Ordered lists are numbered and go in <code>&lt;ol&gt;</code> tags. Each
+      list item goes in an <code>&lt;li&gt;</code> tag.
+    </p>
+
+    <h4>Polya's Problem Solving Framework</h4>
+    <ol>
+      <li>Understand the problem</li>
+      <li>Come up with a plan</li>
+      <li>Carry out the plan</li>
+      <li>Go back and improve your solution</li>
+    </ol>
+
+    <!-- Anchors (Links) -->
+    <h2 id="anchors">Anchors (Links)</h2>
+    <p>
+      Anchor tags create links to other pages by anchoring the URL to some text
+      on the page. The URL goes in the
+      <code>href</code> attribute. Go to
+      <a href="https://duckduckgo.com/">DuckDuckGo</a> to search for more
+      information.
+    </p>
+    <p>
+      Setting <code>target="_blank"</code> will open the link in a new window.
+      See
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"
+        target="_blank"
+        >MDN</a
+      >
+      for more details.
+    </p>
+    <p>
+      Anchor tags can also create links to a new location on the same page. Use
+      the <code>id</code> of the element you want to navigate to, e.g.
+      <a href="#top-of-page">Jump to the top of the page.</a>
+    </p>
+
+    <!-- Text Emphasis -->
+    <h2 id="text-emphasis">Text Emphasis</h2>
+    <em><h3>Italic</h3></em>
+    <em>
+      The <code>&lt;em&gt;</code> element adds extra emphasis to the text within
+      the opening and closing tags. This shows up as italic text in most
+      browsers.
+    </em>
+
+    <strong><h3>Bold</h3></strong>
+    <strong>
+      You can also use the <code>&lt;strong&gt;</code> element to emphasize
+      text. This shows up as bold text in most browsers.
+    </strong>
+
+    <!-- Organizing Content (div, span) -->
+    <h2 id="organizing-content">
+      Organizing Content with <code>&lt;div&gt;</code>,
+      <code>&lt;span&gt;</code>, and <code>&lt;br&gt;</code>
+    </h2>
+    <h3><code>&lt;div&gt;</code></h3>
+    <p>
+      The <code>&lt;div&gt;</code> element is a block element, so each
+      <code>div</code> will show up on a new line.
+    </p>
+    <div>1st div</div>
+    <div>2nd div</div>
+    <div>3rd div</div>
+
+    <h3><code>&lt;span&gt;</code></h3>
+    <p>
+      The <code>&lt;span&gt;</code> element is an inline element, so there will
+      be no line break between each <code>span</code>.
+    </p>
+    <code>&lt;1st span&gt;</code>
+    <code>&lt;2nd span&gt;</code>
+    <code>&lt;3rd span&gt;</code>
+
+    <!-- Breaking Text (br) -->
+    <h2 id="breaking-text">
+      Breaking text using the <code>&lt;br /&gt;</code> tag
+    </h2>
+    <p>
+      HTML is awesome <code>&lt;br /&gt;</code><br />
+      Practice every single day <code>&lt;br /&gt;</code><br />
+      Build cool web pages <code>&lt;br /&gt;</code><br />
+    </p>
+
+    <!-- Jump to top anchor -->
+    <p>
+      <a href="#table-of-contents">Jump to the Table of Contents</a>
+    </p>
+  </body>
+</html>
